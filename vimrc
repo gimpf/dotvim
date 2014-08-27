@@ -16,6 +16,10 @@ set relativenumber   " use line-numbering (relative position)
 set browsedir=buffer " when opening a new file from the menu, default to the directory of the currently open buffer
 set confirm          " ask to confirm if some file is not saved instead of failing immediately
 set hidden           " allow switching to other buffer without saving the current one first
+set switchbuf=usetab,newtab " when opening a buffer, prefer switching to window
+                    " that that has already opened that buffer, even if that
+                    " window is in another tab, and alternatively open a new tab
+                    " to open the buffer
 
 set hlsearch        " by default, higlight searches, switch with <C-L> 
 set ignorecase      " Use case insensitive search, except when using capital letters
@@ -80,8 +84,8 @@ nmap <C-S-Tab> :tabprevious<CR>
 " colorscheme base16-solarized
 
 if has("gui_running")
-    " colorscheme base16-default
-    colorscheme base16-solarized
+    colorscheme base16-default
+    " colorscheme base16-solarized
     " colorscheme solarized
     " colorscheme desert
 
