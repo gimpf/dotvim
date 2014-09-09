@@ -26,6 +26,3 @@
 	path = bundle/vim-startify
 	url = git://github.com/mhinz/vim-startify
 
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = git://github.com/plasticboy/vim-markdown
