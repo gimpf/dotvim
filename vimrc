@@ -55,6 +55,12 @@ filetype plugin indent on  " determine file-type for indentation and plug-ins by
 set list listchars=tab:→\ ,trail:·
 
 "
+" vim-markdown settings
+" ---------------------
+
+let g:vim_markdown_initial_foldlevel=10
+
+"
 " one global session
 " ------------------
 
