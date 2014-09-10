@@ -1,7 +1,7 @@
 "
 " load plug-in system
 " -------------------
-execute pathogen#infect()
+call pathogen#infect()
 set encoding=utf-8
 "
 " editor settings
@@ -29,12 +29,21 @@ set incsearch       " While typing a search command, show immediately where the 
 set nostartofline   " when moving around, don't reset to start of line
 set scrolloff=3
 
+let &showbreak = '►► ' " prefix for wrapped lines
+set wrap            " display-only line-wrapping
+set linebreak       " only break line at <breakat> chars
+set nolist          " disable printing of unprintable characters, as this breaks linebreak for some reason
+
 set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
 set shiftwidth=4    " Number of spaces to use for each step of (auto)indent.
 set expandtab
 set autoindent
 
 set wildmenu        " people say this improves the tab-completion; let's see
+set showcmd         " show partial commands in the last line of the screen
+
+set laststatus=2    " Always display the status line, even if only one window is displayed
+set statusline=%02n\ %-20f\ %m%r[%{&fileencoding?&fileencoding:&encoding}][%{&ff}]%h%q%w%y%=\ %10.(%l,%c%V\ %P%)
 
 set clipboard=unnamed  " sync the anonymous register to the clipboard; use
                        " unnamedplus to sync with X Window clipboard,
@@ -97,11 +106,11 @@ if has("gui_running")
     " set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     if has("gui_gtk2")
-        set guifont=Inconsolata\ 12
+        set guifont=Inconsolata\ 11
     elseif has("gui_macvim")
-        set guifont=Menlo\ Regular:h14
+        set guifont=Menlo\ Regular:h12
     elseif has("gui_win32")
-        set guifont=Consolas:h11:cANSI
+        set guifont=Consolas:h10:cANSI
     endif
 endif
 
