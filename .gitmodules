@@ -26,3 +26,6 @@
 	path = bundle/vim-startify
 	url = git://github.com/mhinz/vim-startify
 
+[submodule "bundle/vim-sleuth"]
+	path = bundle/vim-sleuth
+	url = git://github.com/tpope/vim-sleuth
