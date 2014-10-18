@@ -21,7 +21,7 @@ set switchbuf=usetab,newtab " when opening a buffer, prefer switching to window
                     " window is in another tab, and alternatively open a new tab
                     " to open the buffer
 
-set hlsearch        " by default, higlight searches, switch with <C-L> 
+set hlsearch        " by default, higlight searches, switch with <C-L>
 set ignorecase      " Use case insensitive search, except when using capital letters
 set smartcase
 set incsearch       " While typing a search command, show immediately where the so far typed pattern matches.

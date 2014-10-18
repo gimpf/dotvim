@@ -35,3 +35,9 @@
 [submodule "bundle/vim-ps1"]
 	path = bundle/vim-ps1
 	url = git://github.com/PProvost/vim-ps1
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
