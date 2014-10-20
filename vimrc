@@ -81,6 +81,9 @@ let g:session_autosave='yes'
 " key/mouse bindings
 " ------------------
 
+" and then he who was named once in his life short after his birth spoke: I
+" dislike the shift key, and so the semicolon it is.
+nnoremap ; :
 " deactivate accidental ex mode
 nnoremap Q <nop>
 " map Y to act as y$ instead of yy (from cursor to end of line instead of all of current line, like D and C)
